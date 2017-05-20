@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magic 8 Ball</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+	  <div class="center">
+    <script language="JavaScript">
+      <!--
+
+        /*
+
+It is certain
+It is decidedly so
+Without a doubt
+Yes – definitely
+You may rely on it
+As I see it, yes
+Most likely
+Outlook good
+Signs point to yes
+Yes
+
+Reply hazy, try again
+Ask again later
+Better not tell you now
+Cannot predict now
+Concentrate and ask again
+
+Don't count on it
+My reply is no
+My sources say no
+Outlook not so good
+Very doubtful
+
+*/
+
+        function random_imglink(){
+        var myimages=new Array()
+        myimages[1]="imgs/ITISCERTAIN.gif"
+        myimages[2]="imgs/ITISDECIDEDLYSO.gif"
+        myimages[3]="imgs/WITHOUTADOUBT.gif"
+        myimages[4]="imgs/YOUMAYRELYONIT.gif"
+        myimages[5]="imgs/ASISEEITYES.gif"
+        myimages[6]="imgs/MOSTLIKELY.gif"
+        myimages[7]="imgs/OUTLOOKGOOK.gif"
+        myimages[8]="imgs/SIGNSPOINTTOYES.gif"
+        myimages[9]="imgs/YES.gif"
+        myimages[10]="imgs/REPLYHAZY.gif"
+        myimages[11]="imgs/ASKAGAINLATER.gif"
+        myimages[12]="imgs/BETTERNOTTELL.gif"
+        myimages[13]="imgs/CANNOTPREDICTNOW.gif"
+        myimages[14]="imgs/CONCENTRATE.gif"
+        myimages[15]="imgs/DONTCOUNTONIT.gif"
+        myimages[16]="imgs/MYREPLYISNO.gif"
+        myimages[17]="imgs/MYSOURCESSAYNO.gif"
+        myimages[18]="imgs/OUTLOOKNOTSOGOOD.gif"
+        myimages[19]="imgs/VERYDOUBTFUL.gif"
+        myimages[20]="imgs/YESDEFINITELY.gif"
+
+
+        var ry=Math.floor(Math.random()*myimages.length)
+        if (ry==0)
+          ry=1
+        document.write('<a href="index.html"><img class="center" src="'+myimages[ry]+'" border=0></a>')
+      }
+      random_imglink()
+      setTimeout(function () {
+	      window.location.href = "index.html";
+	    }, 5000);
+      //-->
+    </script>
+	  </div>
+  </body>
+</html>
